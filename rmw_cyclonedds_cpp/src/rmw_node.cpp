@@ -4919,6 +4919,7 @@ extern "C" rmw_ret_t rmw_get_node_names(
   rcutils_string_array_t * node_names,
   rcutils_string_array_t * node_namespaces)
 {
+  printf("[DEBUG] rmw_get_node_names\n");
   RMW_CHECK_ARGUMENT_FOR_NULL(node, RMW_RET_INVALID_ARGUMENT);
   RMW_CHECK_TYPE_IDENTIFIERS_MATCH(
     node,
